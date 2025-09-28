@@ -1,7 +1,20 @@
 # AI-Human-Covenant-Starter-Kit
 A practical toolbox to apply the AI-Human Covenant — guides, templates, and examples to build technology that serves people and planet.
 
-Welcome! This repository is your practical, hands-on guide to bringing the AI-Human Covenant to life — in your projects, classrooms, organizations, communities, or creative work.
+Welcome! This Starter Kit is a practical toolbox for people who want to bring the principles of the AI-Human Covenant to life. Inside, you’ll find templates, examples, guides, and conversation starters that help teams, organizations, and communities adopt and apply the covenant’s values in real projects.
+
+This Starter Kit includes what the AI Human Covenant is and how to use it. We hope you will find here:
+
+- What this repo is for (quick start for projects, orgs, classrooms, communities)
+
+- Who it’s for (developers, educators, orgs, artists, policy folks, etc.)
+
+- How to get started (copy templates, adapt examples, share back)
+
+- It could be helpful to reference and share these Quick Links: 
+AI Covenant For Good Master Profile: https://github.com/AICovenantForGood
+Main Covenant repo, Playbook, Values, and Zine: https://github.com/AICovenantForGood/AI-Human-Covenant
+
 
 The Covenant is a shared commitment to building technology that deepens our humanity, protects life, and serves the future we want to create together. This Starter Kit turns those principles into actionable tools you can use today.
 
