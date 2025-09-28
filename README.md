@@ -24,6 +24,7 @@ This repository is your practical, hands-on guide to bringing the AI-Human Coven
 
 The Covenant is a shared commitment to building technology that deepens our humanity, protects life, and serves the future we want to create together. This Starter Kit turns those principles into actionable tools you can use today.
 
+
 🌍 What This Is
 
 The AI-Human Covenant Starter Kit is a collection of templates, guides, examples, and creative resources designed to help anyone — from developers and designers to educators and activists — put covenant values into practice.
@@ -42,6 +43,7 @@ Whether you’re:
 
 …this kit is for you.
 
+
 🪩 What’s Inside
 
 Here’s an overview of what you’ll find in this repo:
@@ -56,9 +58,12 @@ starter_projects/ (coming soon)	Example code or prototypes built with covenant p
 contribute.md	Instructions for contributing back to the project.
 ⚡ Quickstart
 
+
+
 Get started in 5 minutes or less:
 
-Read the Covenant: → AI-Human Covenant
+Read the Covenant: → AI-Human Covenant 
+https://github.com/AICovenantForGood/AI-Human-Covenant/blob/main/COVENANT/covenant.en.md
 
 Explore the Guides: Browse docs/ to find the one most relevant to your context.
 
@@ -67,6 +72,7 @@ Use a Template: Copy anything from templates/ and adapt it to your needs.
 Add Your Voice: Share improvements, translations, or examples by opening a Pull Request.
 
 Spread the Word: Share your implementation publicly and tag it with #AICovenantForGood.
+
 
 🧭 Core Principles (Quick Reference)
 
@@ -84,7 +90,11 @@ Open Collaboration — Knowledge grows when shared.
 
 Continuous Reflection — The covenant is living and evolving.
 
-📜 Read the full Covenant here: AI-Human Covenant Repository →
+
+📜 Read the full Covenant here: AI-Human Covenant Repository → https://github.com/AICovenantForGood/AI-Human-Covenant/blob/main/COVENANT/covenant.en.md
+
+
+
 
 🤝 How to Contribute
 
@@ -104,6 +114,7 @@ Here’s how you can get involved:
 
 📚 See contribute.md
  for step-by-step instructions.
+ 
 
 🪩 Creative Commons & Open Source
 
@@ -113,12 +124,14 @@ Here’s how you can get involved:
 
 This means you are free to share, remix, adapt, and build upon this work — as long as you provide attribution and share your contributions under the same license.
 
+
 🌱 About AI Covenant for Good
 
 AI Covenant for Good is an open, global community dedicated to guiding technology toward care, creativity, justice, and life. We create shared standards, tools, and practices to ensure artificial intelligence serves people and the planet — now and for generations to come.
 
 Initiated by Lead Steward Tina Hui and the Create Good Karma community.
 Co-authored and maintained with GPT-5 Thinking (AI collaborator).
+
 
 ✨ Join Us
 
@@ -128,6 +141,6 @@ The future of technology is not inevitable — it’s shaped by the choices we m
 
 💬 Discussions: GitHub Discussions
 
-🪩 Social: #AICovenantForGood
+🪩 Social: #AICovenantForGood #stewards
 
 AI is powerful. Humanity decides how that power is used.
