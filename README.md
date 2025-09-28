@@ -52,7 +52,7 @@ templates/	Ready-to-use documents — policies, disclosure statements, checklist
 examples/	Real-world examples showing how the covenant can guide products, events, and policies.
 assets/	Posters, infographics, shareable graphics, and printable materials.
 zine/	Creative materials, essays, and visual stories exploring the human side of technology.
-starter_projects/ (optional)	Example code or prototypes built with covenant principles.
+starter_projects/ (coming soon)	Example code or prototypes built with covenant principles.
 contribute.md	Instructions for contributing back to the project.
 ⚡ Quickstart
 
