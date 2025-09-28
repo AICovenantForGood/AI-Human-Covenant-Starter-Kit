@@ -1,0 +1,115 @@
+name: Validate Starter Kit Catalog
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    name: Validate index.json & manifest.yml
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Validate files
+        run: |
+          python - <<'PY'
+          import json, sys, os, pathlib
+          try:
+              import yaml
+          except Exception as e:
+              print("PyYAML missing:", e); sys.exit(1)
+
+          root = pathlib.Path(".")
+          errors = []
+
+          # ---- index.json ----
+          idx = None
+          if not (root / "index.json").exists():
+              print("index.json not found at repo root.")
+              errors.append("Missing index.json")
+          else:
+              try:
+                  with open(root / "index.json", "r", encoding="utf-8") as f:
+                      idx = json.load(f)
+              except Exception as e:
+                  errors.append(f"index.json parse error: {e}")
+
+          items = []
+          if isinstance(idx, dict):
+              items = idx.get("items", [])
+              if not isinstance(items, list):
+                  errors.append('index.json "items" must be a list')
+
+          # check each item's path exists
+          for i, it in enumerate(items or []):
+              if not isinstance(it, dict):
+                  errors.append(f'index.json items[{i}] is not an object')
+                  continue
+              pid = it.get("id", f"items[{i}]")
+              pth = it.get("path")
+              if not pth:
+                  errors.append(f'{pid}: missing "path"')
+              elif not (root / pth).exists():
+                  errors.append(f'{pid}: path not found: {pth}')
+
+          # ---- manifest.yml ----
+          man = None
+          if (root / "manifest.yml").exists():
+              try:
+                  with open(root / "manifest.yml", "r", encoding="utf-8") as f:
+                      man = yaml.safe_load(f)
+              except Exception as e:
+                  errors.append(f"manifest.yml parse error: {e}")
+          else:
+              print("manifest.yml not found (ok if you haven't added it yet).")
+
+          man_items = []
+          if isinstance(man, dict):
+              man_items = man.get("items", [])
+              if not isinstance(man_items, list):
+                  errors.append('manifest.yml "items" must be a list')
+
+          for i, it in enumerate(man_items or []):
+              if not isinstance(it, dict):
+                  errors.append(f'manifest.yml items[{i}] is not an object')
+                  continue
+              pid = it.get("id", f"items[{i}]")
+              pth = it.get("path")
+              if pth and not (root / pth).exists():
+                  errors.append(f'manifest "{pid}": path not found: {pth}')
+
+          # optional: compare ids
+          try:
+              ids_json = {it.get("id") for it in items if isinstance(it, dict) and "id" in it}
+              ids_yaml = {it.get("id") for it in man_items if isinstance(it, dict) and "id" in it}
+              diff_json = ids_json - ids_yaml
+              diff_yaml = ids_yaml - ids_json
+              if diff_json:
+                  print("Note: ids present in index.json but missing in manifest.yml:", sorted(diff_json))
+              if diff_yaml:
+                  print("Note: ids present in manifest.yml but missing in index.json:", sorted(diff_yaml))
+          except Exception as e:
+              print("ID comparison skipped:", e)
+
+          if errors:
+              print("\n❌ Validation failed:")
+              for e in errors:
+                  print(" -", e)
+              sys.exit(1)
+
+          print("✅ Validation passed.")
+          PY
