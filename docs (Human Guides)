@@ -1,0 +1,16 @@
+docs/ (Human Guides)
+│
+├─ overview.md                # ✨ Big-picture intro to the covenant + starter kit
+├─ how_to_use.md              # 🪜 Step-by-step walkthrough of using templates
+├─ implementation_guide.md   # 🏛️ Org-level rollout guide (governments, companies, NGOs)
+├─ governance_playbook.md    # 👩‍⚖️ Roles, responsibilities, escalation & oversight
+├─ glossary.md               # 📚 Plain-language definitions of key terms
+├─ faq.md                    # ❓ Answers to common questions and critiques
+├─ references.md            # 🔗 External standards, citations, reading list
+│
+└─ guides/                   # 🧭 Human-centric guides for different audiences
+   ├─ for-developers.md     # 🧑‍💻 Integrating covenant principles into AI design/ML
+   ├─ for-organizations.md  # 🏢 Building policies, governance workflows, review boards
+   ├─ for-educators.md      # 📖 Teaching, workshops, classroom exercises
+   └─ for-communities.md    # 🏡 Hosting local dialogues, citizen engagement, advocacy
+
