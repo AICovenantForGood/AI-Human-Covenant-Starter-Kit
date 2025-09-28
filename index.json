@@ -1,0 +1,79 @@
+{
+  "name": "AI-Human Covenant Starter Kit",
+  "version": "1.0.0",
+  "updated": "2025-09-28",
+  "items": [
+    {
+      "id": "template.ai_policy",
+      "title": "Responsible AI Policy (Starter)",
+      "type": "template",
+      "path": "templates/ai_policy.md",
+      "version": "1.0",
+      "tags": ["policy", "governance", "org"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_risk_checklist",
+      "title": "AI Risk Assessment Checklist",
+      "type": "template",
+      "path": "templates/ai_risk_assessment.md",
+      "version": "1.0",
+      "tags": ["risk", "safety", "governance"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_risk_checklist_lite",
+      "title": "AI Risk Assessment – Lite",
+      "type": "template",
+      "path": "templates/ai_risk_assessment_lite.md",
+      "version": "1.0",
+      "tags": ["risk", "safety", "quickstart"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_impact_disclosure",
+      "title": "AI Impact Disclosure",
+      "type": "template",
+      "path": "templates/ai_impact_disclosure.md",
+      "version": "1.0",
+      "tags": ["transparency", "public", "trust"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_governance_policy",
+      "title": "AI Governance Policy",
+      "type": "template",
+      "path": "templates/ai_governance_policy.md",
+      "version": "1.0",
+      "tags": ["policy", "governance", "org"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_incident_response",
+      "title": "AI Incident Response Plan",
+      "type": "template",
+      "path": "templates/ai_incident_response_plan.md",
+      "version": "1.0",
+      "tags": ["safety", "ops", "governance"],
+      "languages": ["en"]
+    },
+    {
+      "id": "template.ai_procurement_policy",
+      "title": "AI Procurement & Vendor Policy",
+      "type": "template",
+      "path": "templates/ai_procurement_policy.md",
+      "version": "1.0",
+      "tags": ["procurement", "vendors", "compliance"],
+      "languages": ["en"]
+    },
+    {
+      "id": "guide.hitl",
+      "title": "Human-in-the-Loop (HITL) Design Guide",
+      "type": "guide",
+      "path": "templates/human_in_the_loop_design_guide.md",
+      "version": "1.0",
+      "tags": ["design", "oversight", "ux"],
+      "languages": ["en"]
+    }
+  ]
+}
