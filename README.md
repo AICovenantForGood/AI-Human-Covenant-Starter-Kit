@@ -11,8 +11,10 @@ This Starter Kit includes what the AI Human Covenant is and how to use it. We ho
 
 - How to get started (copy templates, adapt examples, share back)
 
-- It could be helpful to reference and share these Quick Links: 
+- It could be helpful to reference and share these Quick Links:
+  
 AI Covenant For Good Master Profile: https://github.com/AICovenantForGood
+
 Main Covenant repo, Playbook, Values, and Zine: https://github.com/AICovenantForGood/AI-Human-Covenant
 
 
