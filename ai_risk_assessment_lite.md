@@ -1,5 +1,7 @@
 # 🧪 AI Risk Assessment – Lite Version (Quick Scan)
 
+👉 See also: Full AI Risk Assessment Checklist: https://github.com/AICovenantForGood/AI-Human-Covenant-Starter-Kit/blob/templates/ai_risk_assessment.md
+
 **Version:** 1.0  
 **Use case:** Early-stage review (prototype, concept, or MVP)  
 **Time:** ~10–15 min
@@ -46,5 +48,6 @@ It’s designed to be *fast and conversational*, not exhaustive.
 ✅ **Tip:** If you answer “no” or “not sure” to more than 2 questions, it’s worth a deeper review before moving forward.
 
 ---
+
 
 *This lite checklist is a starting point — not a substitute for comprehensive risk assessment.*
