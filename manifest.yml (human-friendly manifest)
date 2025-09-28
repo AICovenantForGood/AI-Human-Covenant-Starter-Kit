@@ -1,0 +1,83 @@
+name: AI-Human Covenant Starter Kit
+version: 1.0.0
+updated: 2025-09-28
+maintainers:
+  - name: Tina Hui
+    role: Lead Steward
+    contact: ""
+  - name: GPT-5 Thinking
+    role: AI collaborator
+license:
+  text: CC-BY-SA-4.0
+  code: MIT
+structure:
+  assets: visuals and shareables
+  docs: guides and how-tos
+  examples: reference implementations and case studies
+  templates: copy-and-paste policies and checklists
+  zine: cultural storytelling and essays
+items:
+  - id: template.ai_policy
+    title: Responsible AI Policy (Starter)
+    type: template
+    path: templates/ai_policy.md
+    version: "1.0"
+    tags: [policy, governance, org]
+    languages: [en]
+    description: Baseline public policy for org adoption of responsible AI.
+  - id: template.ai_risk_checklist
+    title: AI Risk Assessment Checklist
+    type: template
+    path: templates/ai_risk_assessment.md
+    version: "1.0"
+    tags: [risk, safety, governance]
+    languages: [en]
+    description: Comprehensive pre-deployment risk review.
+  - id: template.ai_risk_checklist_lite
+    title: AI Risk Assessment – Lite
+    type: template
+    path: templates/ai_risk_assessment_lite.md
+    version: "1.0"
+    tags: [risk, safety, quickstart]
+    languages: [en]
+    description: 10–15 minute early-stage risk scan.
+  - id: template.ai_impact_disclosure
+    title: AI Impact Disclosure
+    type: template
+    path: templates/ai_impact_disclosure.md
+    version: "1.0"
+    tags: [transparency, public, trust]
+    languages: [en]
+    description: Public transparency “nutrition label” for AI systems.
+  - id: template.ai_governance_policy
+    title: AI Governance Policy
+    type: template
+    path: templates/ai_governance_policy.md
+    version: "1.0"
+    tags: [policy, governance, org]
+    languages: [en]
+    description: Roles, processes, and oversight for AI work.
+  - id: template.ai_incident_response
+    title: AI Incident Response Plan
+    type: template
+    path: templates/ai_incident_response_plan.md
+    version: "1.0"
+    tags: [safety, ops, governance]
+    languages: [en]
+    description: Protocol for handling AI failures, harms, or misuse.
+  - id: template.ai_procurement_policy
+    title: AI Procurement & Vendor Policy
+    type: template
+    path: templates/ai_procurement_policy.md
+    version: "1.0"
+    tags: [procurement, vendors, compliance]
+    languages: [en]
+    description: Due diligence and contracting requirements for third-party AI.
+  - id: guide.hitl
+    title: Human-in-the-Loop (HITL) Design Guide
+    type: guide
+    path: templates/human_in_the_loop_design_guide.md
+    version: "1.0"
+    tags: [design, oversight, ux]
+    languages: [en]
+    description: Practical patterns to keep humans in control.
