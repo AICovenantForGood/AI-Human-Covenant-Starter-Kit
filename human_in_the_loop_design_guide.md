@@ -1,5 +1,7 @@
 # 🧑‍💻 Human-in-the-Loop (HITL) Design Guide
 
+This world-class template version is for design teams, policy makers, and procurement processes. It’s one of the most cited governance requirements in EU AI Act compliance and ISO/IEC standards.
+
 **Version:** 1.0  
 **Use:** Design and engineering guide for ensuring meaningful human oversight in AI systems.  
 **License:** CC-BY-SA 4.0  
