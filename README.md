@@ -17,6 +17,26 @@ AI Covenant For Good Master Profile: https://github.com/AICovenantForGood
 
 Main Covenant repo, Playbook, Values, and Zine: https://github.com/AICovenantForGood/AI-Human-Covenant
 
+## 🌍 How to Get Involved
+
+The AI-Human Covenant is open-source, open-community, and open to *you*.  
+Whether you’re a developer, educator, policymaker, artist, or simply a curious human, there are many ways to participate in this creative commons:
+
+- 📜 **Add a Community Report**: Share reflections from a workshop, dinner table conversation, classroom, or event. ([Learn how](./community-reports/README.md))  
+- 🛠️ **Use the Starter Kit**: Apply Covenant principles in your organization with ready-to-use templates and checklists.  
+- 🌱 **Contribute Guides**: Add activities, lesson plans, or policy ideas to our `/docs/guides/` section.  
+- 🌍 **Translate the Covenant**: Help make this resource accessible across languages and cultures.  
+- 🤝 **Collaborate**: Join discussions, propose new features, or bring the Covenant into your community.  
+
+💡 Even small contributions matter — this is a *living document* shaped by many hands. The Covenant grows stronger every time someone shares their voice, their care, and their perspective.
+
+---
+
+*Initiated by the Create Good Karma community.  
+Maintained by the AI Covenant for Good collective.  
+Explored and prototyped in partnership with the GAGE Lab.*  
+
+
 
 🧰 AI-Human Covenant Starter Kit
 
@@ -129,8 +149,7 @@ This means you are free to share, remix, adapt, and build upon this work — as 
 
 AI Covenant for Good is an open, global community dedicated to guiding technology toward care, creativity, justice, and life. We create shared standards, tools, and practices to ensure artificial intelligence serves people and the planet — now and for generations to come.
 
-Initiated by Lead Steward Tina Hui and the Create Good Karma community.
-Co-authored and maintained with GPT-5 Thinking (AI collaborator).
+Initiated by Lead Steward Tina Hui, The Create Good Karma community and supported by The GAGE Lab. Co-authored and maintained with GPT-5 Thinking and Public AI (AI collaborators).
 
 
 ✨ Join Us
