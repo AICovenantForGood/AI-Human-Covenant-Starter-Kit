@@ -1,0 +1,38 @@
+name: 🌍 Community Report
+description: Share your Covenant workshop/conversation
+title: "Community Report: <City, Country> — <Event Name>"
+labels: ["community-report"]
+body:
+  - type: input
+    id: date
+    attributes: { label: Date (YYYY-MM-DD), placeholder: 2025-10-15 }
+    validations: { required: true }
+  - type: input
+    id: location
+    attributes: { label: Location, placeholder: "City, Country" }
+    validations: { required: true }
+  - type: input
+    id: host
+    attributes: { label: Host org (or "Independent") }
+  - type: input
+    id: facilitator
+    attributes: { label: Facilitator }
+  - type: input
+    id: participants
+    attributes: { label: Number of participants, placeholder: "e.g., 14" }
+  - type: textarea
+    id: summary
+    attributes: { label: Event summary, render: markdown }
+    validations: { required: true }
+  - type: textarea
+    id: insights
+    attributes: { label: Key insights (bullets), render: markdown }
+  - type: textarea
+    id: actions
+    attributes: { label: Community action ideas (bullets), render: markdown }
+  - type: textarea
+    id: quotes
+    attributes: { label: Reflections & quotes (optional), render: markdown }
+  - type: input
+    id: contact
+    attributes: { label: Contact (optional), placeholder: "email or site" }
