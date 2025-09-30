@@ -1,0 +1,92 @@
+name: Ingest Community Reports
+on:
+  issues:
+    types: [opened, edited]
+permissions:
+  contents: write
+  issues: read
+jobs:
+  make-md:
+    if: contains(github.event.issue.labels.*.name, 'community-report')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build markdown from issue
+        id: build
+        run: |
+          python - <<'PY'
+          import json, os, re, textwrap, datetime, pathlib
+          ev=json.loads(os.environ['GITHUB_EVENT'])
+          i=ev['issue']
+          title=i['title']
+          body=i['body'] or ""
+          # Extract form fields (Issue Forms render as key: value in body)
+          def get(k, default=""):
+            import re
+            m=re.search(rf"(?mi)^{re.escape(k)}:?\\s*\\n?(.+?)(\\n\\n|$)", body)
+            return (m.group(1).strip() if m else default).strip()
+          date=get("Date (YYYY-MM-DD)")
+          # Validate/normalize date
+          try:
+            date=datetime.datetime.strptime(date, "%Y-%m-%d").date().isoformat()
+          except: date=datetime.date.today().isoformat()
+          location=get("Location")
+          host=get("Host org (or \"Independent\")")
+          facilitator=get("Facilitator")
+          participants=get("Number of participants")
+          summary=get("Event summary")
+          insights=get("Key insights (bullets)")
+          actions=get("Community action ideas (bullets)")
+          quotes=get("Reflections & quotes (optional)")
+          contact=get("Contact (optional)")
+          safe_loc=re.sub(r'[^A-Za-z0-9]+','_',location).strip('_') or "Unknown"
+          safe_title=re.sub(r'[^A-Za-z0-9]+','_',title)[:40].strip('_')
+          fname=f"community-reports/{date}_{safe_loc}.md"
+          md=f"""# 📍 AI-Human Covenant Workshop Report
+
+**Date:** {date}
+**Location:** {location}
+**Host Organization:** {host}
+**Facilitator:** {facilitator}
+**Number of Participants:** {participants}
+
+---
+
+## 🪩 Event Summary
+{summary or '-'}
+
+---
+
+## 🧠 Key Insights
+{insights or '-'}
+
+---
+
+## 🛠️ Community Action Ideas
+{actions or '-'}
+
+---
+
+## 🫂 Reflections & Quotes (Optional)
+{quotes or '-'}
+
+---
+
+**Submitted via:** GitHub Issue #{i['number']}
+**Contact (optional):** {contact}
+"""
+          p=pathlib.Path(fname)
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(md, encoding='utf-8')
+          print(f"::set-output name=path::{fname}")
+          PY
+      - name: Commit file
+        run: |
+          FILE="${{ steps.build.outputs.path }}"
+          git config user.name "ai-covenant-bot"
+          git config user.email "bot@aicovenant.org"
+          git add "$FILE"
+          git commit -m "Ingest community report: $FILE" || echo "No changes"
+          git push
+        env:
+          GITHUB_EVENT: ${{ toJson(github.event) }}
