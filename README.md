@@ -124,13 +124,58 @@ Here’s how you can get involved:
 
 This means you are free to share, remix, adapt, and build upon this work — as long as you provide attribution and share your contributions under the same license.
 
+# 📜 Community Reports
+
+Welcome to the **AI-Human Covenant Community Reports** section — a living, evolving archive of real-world conversations, workshops, experiments, and reflections from around the world.
+
+## 🌎 Why Community Reports Matter
+
+The Covenant isn’t meant to stay on GitHub — it’s meant to come alive in classrooms, boardrooms, town halls, coworking spaces, libraries, and community circles everywhere.  
+Every report shared here helps us:
+
+- 🪩 **Spot Patterns:** See which questions, hopes, and concerns are emerging across different communities.  
+- 💡 **Share Wisdom:** Inspire others by showing what worked well (and what didn’t!) in your local discussions.  
+- 📢 **Amplify Voices:** Make sure the global conversation on AI reflects *many* perspectives, not just the loudest or most well-funded.  
+- 🧭 **Guide Future Action:** Your insights help shape future versions of the Covenant, policy recommendations, educational toolkits, and more.
+
+Think of this as a **collective memory and field guide** — one that grows more powerful and valuable with every contribution.
+
+---
+
+## ✨ How to Contribute
+
+1. Copy the [TEMPLATE.md](./TEMPLATE.md) file into this folder.  
+2. Rename it using this format:
+
+YYYY-MM-DD_YourCommunityName.md
+
+For example: `2025-10-21_TorontoWorkshop.md`
+3. Fill in the details of your event, discussion, or project. Don’t worry about being “formal” — honesty and reflection are far more valuable.
+4. Submit a Pull Request to add your report to the archive.
+
+💡 **Pro tip:** Even a short summary is useful. You don’t need to host a big event — a small dinner conversation, class discussion, or internal team workshop all count.
+
+---
+
+## 📚 How These Reports Are Used/Useful
+
+- They’ll help build a **global map of ethical AI conversations**.  
+- They can inform **educational materials** and **policy frameworks**.  
+- They’ll showcase the creativity and care of communities stepping up to guide AI’s future.  
+- And most importantly: they remind us that **we are not alone** — we’re part of a global community building a better future, together.
+
+---
+
+🌱 *Your voice matters. Your story matters. Together, they will help shape how humanity and AI grow — hand in hand, for the good of all.*
+
+
 
 🌱 About AI Covenant for Good
 
-AI Covenant for Good is an open, global community dedicated to guiding technology toward care, creativity, justice, and life. We create shared standards, tools, and practices to ensure artificial intelligence serves people and the planet — now and for generations to come.
+AI Covenant for Good is an open, global community and a creative commons of ethical AI dedicated to guiding technology toward care, creativity, justice, and life. We create shared standards, tools, and practices to ensure artificial intelligence serves people and the planet — now and for generations to come.
 
-Initiated by Lead Steward Tina Hui and the Create Good Karma community.
-Co-authored and maintained with GPT-5 Thinking (AI collaborator).
+Initiated by Lead Steward Tina Hui, The Create Good Karma community and supported by The GAGE Lab.
+Co-authored and maintained with GPT-5 Thinking and Public AI (AI collaborators).
 
 
 ✨ Join Us
